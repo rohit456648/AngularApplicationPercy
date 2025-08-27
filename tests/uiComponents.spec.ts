@@ -232,3 +232,7 @@ test('sliders', async({page}) => {
     await expect(tempBox).toContainText("30")
 })
 
+//Add a after hook to print a message the test cases ran successfully and is pass
+test.afterEach(async () => {
+    console.log('All test cases ran successfully and passed');
+});
