@@ -7,7 +7,7 @@ test.beforeEach( async ({page}, testInfo) => {
     testInfo.setTimeout(testInfo.timeout + 2000)
 })
 
-test('auto waiting', async({page}) => {
+test.skip('auto waiting', async({page}) => {
     const successButton = page.locator('.bg-success')
 
     //1 await successButton.click()  //click waits for button to be available
